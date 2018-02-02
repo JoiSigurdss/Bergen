@@ -67,14 +67,14 @@ public class DragRigidbody : MonoBehaviour
 		float rayDistance;
 		if (grabPlane.Raycast(ray, out rayDistance))
 			jointTrans.position = ray.GetPoint(rayDistance);
-		if (Input.GetMouseButtonDown (1)) {
+		if (Input.GetMouseButtonDown (1) || Input.GetKeyDown (KeyCode.Space)) {
 			Debug.Log ("Up");
 			activeObject.useGravity = false;
 			activeTransform.Translate (Vector3.up * 2);
 			//toSun.SetActive (false);
 			//toIndLight.SetActive (true);
 		}
-		if (Input.GetMouseButtonUp (1)) {
+		if (Input.GetMouseButtonUp (1) || Input.GetKeyUp (KeyCode.Space)) {
 			Debug.Log ("Down");
 			activeTransform.Translate (Vector3.down * 1.9f);
 			activeObject.useGravity = true;
