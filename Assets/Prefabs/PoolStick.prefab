@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 65472389457011430}
   - component: {fileID: 54113289896116660}
   - component: {fileID: 114352496350593566}
+  - component: {fileID: 82246009783192206}
   m_Layer: 8
   m_Name: PoolStick
   m_TagString: Untagged
@@ -111,6 +112,86 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: -0.000000009313226, y: 0.12, z: -0.01}
+--- !u!82 &82246009783192206
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683278553040380}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 5
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114352496350593566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,6 +205,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 600
   damping: 6
+  WhenClicking: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
+  WhenReleasing: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  WhenUp: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
+  WhenDown: {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
 --- !u!136 &136369545242814622
 CapsuleCollider:
   m_ObjectHideFlags: 1
